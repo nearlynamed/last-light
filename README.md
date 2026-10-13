@@ -2,6 +2,8 @@
 
 A playable, real-time orbital defense command game. Read the returns, resolve uncertainty, and protect the fictional planet Aster through a five-minute watch.
 
+**[Play LAST LIGHT](https://last-light-five.vercel.app)**
+
 ## Run locally
 
 Node.js 22.12+ (24 recommended), pnpm 11.25.
