@@ -1,0 +1,9 @@
+.inspector{display:flex;flex-direction:column;overflow:hidden}
+.intelligence{flex:1;min-height:100px;overflow-y:auto;padding-right:2px}
+.engagement{flex-shrink:0;background:var(--panel)}
+.radar-tag{font-size:10px;background:#08121888;text-shadow:0 1px 3px #000}.radar-tag span{font-size:7px}.contact-tag{font-size:11px}.contact-tag span{font-size:8px}
+@media(max-height:850px) and (min-width:901px){.identity{display:flex;align-items:center;gap:10px}.identity>div{margin-bottom:0}.identity h2{font-size:25px}.identity .tag{font-size:6px}.identity-symbol{font-size:30px}.intelligence .data-grid{padding:9px 0;gap:10px}.data-grid strong{font-size:17px}.data-grid div>span{font-size:7px;margin-bottom:4px}.identity-caption{font-size:9px}}
+@media(max-height:850px) and (min-width:901px){.inspector{padding-top:16px;padding-bottom:12px}.engagement{padding-top:12px}.engagement .section-label{margin-bottom:9px}.weapon-select button{padding:8px}.weapon-select strong{padding-top:18px}.weapon-description{min-height:0;margin:9px 0;font-size:9px}.launcher-label{margin-top:8px}.launch-button{padding:10px 9px}.source-reports{margin-top:12px;margin-bottom:10px}.identity-caption{margin:10px 0 12px}.data-grid{padding:12px 0;gap:12px 8px}.threat-note{margin:12px 0}.intelligence .section-label{margin-bottom:12px}.commit-note{font-size:7px}}
+@media(max-width:900px){.inspector{display:grid;grid-template-columns:1fr 1fr;gap:25px;overflow:visible}.intelligence{overflow:visible;grid-column:1;grid-row:1}.inspector .engagement{grid-column:2;grid-row:1}.inspector .engagement .section-label{margin-bottom:20px}}
+@media(max-width:600px){.inspector{display:flex}.intelligence{overflow:visible}.engagement{margin-top:3px}}
+@media(max-height:850px) and (min-width:901px){.identity-caption{font-size:8px;line-height:1.4;margin:3px 0 7px}.intelligence>.section-label{margin-bottom:9px}}
