@@ -8,7 +8,8 @@ export interface SensorView extends Sensor { position:V3;direction:V3;beamAngle:
 export interface Flight { id:string;kind:Weapon;track:string;silo:string;start:V3;aim:V3;position:V3;launched:number;arrival:number;acquired:boolean;finished:boolean; }
 export interface Message { id:number;time:number;level:'info'|'warn'|'good';text:string; }
 export interface Silo { id:string;name:string;lat:number;phase:number;cooldown:number;precision:number;deflector:number; }
-export interface Forecast { closest:number;arrival:number|null;uncertainty:number;risk:'high'|'possible'|'clear';deflectWindow:number|null; }
+export interface Forecast { closest:number;closestIn:number;closestPoint:V3;outbound:boolean;arrival:number|null;uncertainty:number;risk:'high'|'possible'|'clear';deflectWindow:number|null; }
+export interface VisualEvent { id:number;kind:'impact'|'intercept';position:V3;time:number; }
 export interface WindowLane { sensor:string;visible:boolean[];expected:number|null; }
 export interface Debrief { total:number;neutralized:number;deflected:number;impacts:number;escaped:number;shots:number; }
-export interface Snapshot { time:number;running:boolean;started:boolean;ended:boolean;integrity:number;tracks:Track[];sensors:SensorView[];flights:Flight[];messages:Message[];silos:Silo[];debrief:Debrief|null; }
+export interface Snapshot { time:number;running:boolean;started:boolean;ended:boolean;integrity:number;tracks:Track[];sensors:SensorView[];flights:Flight[];messages:Message[];silos:Silo[];events:VisualEvent[];debrief:Debrief|null; }

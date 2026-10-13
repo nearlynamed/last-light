@@ -4,6 +4,12 @@ A playable, real-time orbital defense command game. Read the returns, resolve un
 
 **[Play LAST LIGHT](https://last-light-five.vercel.app)**
 
+### Crossing Paths update
+
+The watch now has sixteen approaches: twelve gravitational flybys and four curved impact trajectories, including several close atmospheric grazes among the misses. Traffic arrives more frequently as the stream builds. These are physical trajectories; the player still sees only radar-derived estimates, so a threatening early solution can resolve into a harmless passage.
+
+Selected tracks show estimated closest-pass altitude, time, and uncertainty. Measured trails, scan-return pulses, longer projection arcs, missile wakes, intercept flashes, surface shockwaves, and optional event sounds make motion and engagements easier to read. A flash still requires radar verification. Deflectors add outward and prograde velocity and require at least 40 seconds between interception and the projected crossing.
+
 ## Run locally
 
 Node.js 22.12+ (24 recommended), pnpm 11.25.
